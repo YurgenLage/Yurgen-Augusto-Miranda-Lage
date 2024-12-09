@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Yurgen Augusto Miranda Lage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre-mim">
+        <div class="container">
+            <h1>Yurgen Augusto Miranda Lage</h1>
+            <div class="sobre-mim-container">
+                <div class="foto-container">
+                    <img src="yurgenlage.png" alt="Foto de Yurgen Augusto Miranda Lage">
+                </div>
+                <div class="texto-container">
+                    <p>Meu nome é Yurgen Augusto Miranda Lage, tenho 20 anos e moro no Brasil, no estado da Bahia. Sou apaixonado por tecnologia e paleontologia, duas áreas que sempre despertaram meu interesse desde a infância. Também sou fascinado por carros e motos, e adoro aproveitar meu tempo livre com hobbies como andar de bicicleta e tocar violão. Sou uma pessoa curiosa, sempre buscando aprender coisas novas e colocar em prática o que descubro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- FORMAÇÃO -->
+   <section id="formacao">
+    <div class="container">
+        <h2>Formação Educacional</h2>
+        <div class="formacao-conteudo">
+            <img src="graduation-hat.png" alt="Imagem Formação" class="imagem-formacao"> <!-- LOGO DE FORMAÇÃO -->
+            <ul>
+                <!-- LISTA DE INFORMAÇÕES ACADEMICAS -->
+                <li>Concluí o Ensino Médio em 2022.</li>
+                <li>Atualmente cursando Análise e Desenvolvimento de Sistemas (ADS) na UNINTER.</li>
+                <li>Realizando cursos complementares de Inglês da UNINTER.</li>
+                <li>Estudando JavaScript, CSS e HTML por meio dos cursos oferecidos pelo Guanabara.</li>
+                <li>Falo português fluente e tenho conhecimentos de inglês básico.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <div class="container">
+        <h2>Meu Portfólio</h2>
+        <p>Aqui estão alguns dos projetos que desenvolvi ao longo do tempo:</p>
+        <div class="portfolio-container">
+            <!-- ITEM DE PORTFÓLIO PROJETO 1 -->
+            <div class="portfolio-item">
+                <div class="portfolio-item-conteudo">
+                    <img src="leonardo.png" alt="Imagem Projeto Leonardo" class="imagem-portfolio">
+                    <div>
+                        <h3>Projeto - Leonardo</h3>
+                        <p>Um site de biografia do Leonardo Da Vinci</p>
+                        <a href="https://github.com/YurgenLage/biografia-leonardo" target="_blank">Ver projeto</a> <!-- LINK DE DIRECIONAMENTO AO CÓDIGO DO GITHUB -->
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+            <!-- ITEM DE PORTFÓLIO PROJETO 2 -->
+                <div class="portfolio-item-conteudo">
+                    <img src="gerador-de-nomes.png" alt="Imagem Projeto Gerador de Nomes" class="imagem-portfolio">
+                    <div>
+                        <h3>Projeto - Gerador de Nomes</h3>
+                        <p>Sistema que gera nicknames</p>
+                        <a href="https://github.com/YurgenLage/gerador-de-nomes/tree/main/Gerador%20de%20nomes" target="_blank">Ver projeto</a> <!-- LINK DE DIRECIONAMENTO AO CÓDIGO DO GITHUB -->
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+             <!-- ITEM DE PORTFÓLIO PROJETO 3 -->
+                <div class="portfolio-item-conteudo">
+                    <img src="eletricista.png" alt="Imagem Projeto Portfolio Eletricista" class="imagem-portfolio">
+                    <div>
+                        <h3>Projeto - Portfolio</h3>
+                        <p>Um site de portfolio de eletricista</p>
+                        <a href="https://github.com/YurgenLage/portfolio-eletricista" target="_blank">Ver projeto</a> <!-- LINK DE DIRECIONAMENTO AO CÓDIGO DO GITHUB -->
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+            <!-- ITEM DE PORTFÓLIO PROJETO 4 -->
+                <div class="portfolio-item-conteudo">
+                    <img src="tecnologica.png" alt="Imagem Projeto Tecnologica" class="imagem-portfolio">
+                    <div>
+                        <h3>Projeto - Tecnologica</h3>
+                        <p>Site de tecnologia/forum</p>
+                        <a href="https://github.com/YurgenLage/forum-tecnologia" target="_blank">Ver projeto</a> <!-- LINK DE DIRECIONAMENTO AO CÓDIGO DO GITHUB -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTATO -->
+<section id="contato">
+    <div class="container">
+        <h2>Contato</h2>
+        
+        <!-- FORMULARIO DE CONTATO -->
+        <form action="mailto:yurgenmirandalage@gmail.com" method="post" enctype="text/plain" class="form-contato">
+            <div class="input-container">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
+
+        <!-- INFORMAÇÕES ADICIONAIS DE CONTATO -->
+        <div class="informacoes-contato">
+            <p><strong>Telefone:</strong> <a href="tel:+5573988484035" class="info-link">73 98848-4035</a> <img src="phone-call.png" alt="Ícone de telefone" class="icone-contato"></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yurgen-lage-5063ba31b//" target="_blank" class="info-link">Yurgen Lage</a> <img src="linkedin.png" alt="Ícone do LinkedIn" class="icone-contato"></p>
+            <p><strong>Email:</strong> <a href="mailto:yurgenmirandalage@gmail.com" class="info-link">yurgenmirandalage@gmail.com</a> <img src="email.png" alt="Ícone de email" class="icone-contato"></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/5573988484035" class="info-link">73 98848-4035</a> <img src="whatsapp.png" alt="Ícone do WhatsApp" class="icone-contato"></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/yurgenlage7/" target="_blank" class="info-link">Yurgen Lage</a> <img src="instagram.png" alt="Ícone do Instagram" class="icone-contato"></p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 Yurgen Augusto Miranda Lage. Todos os direitos reservados.</p> <!-- MARCA D'AGUA DE DIREITOS DO SITE -->
+</footer>
+
+<script src="script.js"></script> <!-- ADICIONA O SCRIPT.JS -->
+</body>
+</html>

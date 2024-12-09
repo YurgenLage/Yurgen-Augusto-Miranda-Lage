@@ -1,0 +1,322 @@
+/* FONTE IMPORTADA */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap');
+
+/* ESTILO GERAL */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* SCROLL SUAVE */
+    overflow-x: hidden; 
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #003366;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out; /* ANIMAÇÃO DE APARECER DEVAGAR */
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    animation: fadeIn 1.5s ease-out; /* ANIMAÇÃO DE APARECER DEVAGAR */
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+ul li a:hover {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+}
+
+/* MENU */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 0.8s ease-out; /* ANIMAÇÃO PARA O MENU */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* AJUSTE DA ROLAGEM E DO OFFSET */
+section {
+    padding: 80px 20px; 
+    margin: 100px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out; /* ANIMAÇÃO DE APARECER DEVAGAR */
+}
+
+section#sobre-mim, section#portfolio, section#contato {
+    padding-top: 120px; /* ADICIONA MAIS ESPAÇO PARA COMPENSAR O MENU */
+}
+
+/* ALINHAMENTO DE FOTO E TEXTO */
+.sobre-mim-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    animation: slideUp 1s ease-out;
+}
+
+.foto-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #003366;
+    transition: transform 0.3s ease; /* ANIMAÇÃO SUAVE */
+}
+
+.foto-container img:hover {
+    transform: scale(1.1);
+}
+
+.texto-container {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* ICONE DE FORMAÇÃO */
+.imagem-formacao {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.imagem-formacao:hover {
+    transform: scale(1.1); /* EFEITO DE AUMENTAR AO PASSAR O MOUSE */
+}
+
+
+/* Portfólio */
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative; /* TEXTO NÃO SOBREPOR ITENS */
+}
+
+.portfolio-item img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; /* PARA IMAGEM OCUPAR O ESPAÇO PROPORCIONALMENTE */
+    border-radius: 8px;
+    margin-bottom: 15px; 
+}
+
+.portfolio-item h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #003366;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* LIMITA O NUMERO DE LINHAS VISIVEIS */
+    -webkit-box-orient: vertical;
+    
+    /* VERSÃO PADRÃO */
+    display: box;
+    line-clamp: 3;
+    box-orient: vertical;
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+}
+
+.portfolio-item a:hover {
+    color: #0066cc;
+}
+
+/* FORMATAÇÃO DO FORMULÁRIO DE CONTATO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0066cc;
+}
+
+/* ICONES DE CONTATO */
+.informacoes-contato p {
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.informacoes-contato img {
+    width: 20px;
+    height: 20px;
+}
+
+/* ANIMAÇÕES/EFEITOS */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .sobre-mim-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-container {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        width: 90%;
+    }
+}
+
+/* FOCO NOS LINKS DE ACESSIBILIDADE */
+ul li a:focus {
+    outline: 2px solid #0066cc;
+}
+
+/* LINK ATIVO */
+ul li a.active {
+    font-weight: bold;
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+}
+
+/* LISTA DE FORMAÇÃO NA VERTICAL */
+.formacao-conteudo ul {
+    list-style-type: disc; /* ADICIONA AS BOLINHAS NA LISTA */
+    padding-left: 20px; /* ESPAÇO DAS BOLINHAS */
+    margin-top: 10px;
+    display: block; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.1em; 
+    color: #333; 
+}
+
+.formacao-conteudo li {
+    margin-bottom: 10px; 
+    line-height: 1.6; 
+}
+
+.formacao-conteudo li:hover {
+    color: #003366;
+    font-weight: bold;
+}
